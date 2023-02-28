@@ -18,7 +18,7 @@ const galleryListEl = document.querySelector('.gallery');
 
 const makeGalleryEl = ({ url, alt, }) =>
   `<li>
-    <img class = "gallery-item" src = "${url}" alt = "${alt}">
+    <img class = "gallery-item" src = "${url}" alt = "${alt}" width = 100%>
   </li>`;
 
 const markup = images.map(img => 
@@ -29,13 +29,3 @@ galleryListEl.insertAdjacentHTML('afterbegin', markup);
 console.log(galleryListEl);
 
 
-
-
-
-// const galleryImgEl = images.map(img => {
-//   `<li>
-//     <img class = "gallery-item" src = "${img.url}" alt = "${img.alt}"></img>
-//   </li>`
-// });
-
-// galleryListEl.insertAdjacentElement('afterbegin', galleryImgEl);

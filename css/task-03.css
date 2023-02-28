@@ -1,6 +1,6 @@
 .gallery {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
